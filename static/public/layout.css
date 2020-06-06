@@ -1,0 +1,81 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	font-family: "Lucida";
+	src: url("./../../public/Lucida Console.ttf");
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: rgb( 30, 33, 37 );
+	overflow: hidden;
+}
+
+h1 {
+	margin: 5% auto;
+	color: #FFF;
+	font: normal 40px Lucida;
+	text-align: center;
+}
+
+#buttons {
+	width: 80%;
+	height: 100px;
+	margin: 5% auto;
+}
+
+.choose {
+	width: 50%;
+	height: 100%;
+	float: left;
+	font: normal 35px "Lucida";
+	color: #FFF;
+	cursor: pointer;
+	transition: all .1s linear 0s;
+}
+
+#true {
+	background-color: #9DA;
+	border: 0;
+	border-radius: 10px 0 0 10px;
+}
+
+#false {
+	background-color: #F55;
+	border: 0;
+	border-radius: 0 10px 10px 0;
+}
+
+#true:hover {
+	background-color: #3D6;
+}
+
+#false:hover {
+	background-color: #F00;
+}
+
+#gift {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-family: Lucida;
+	color: #FFF;
+	opacity: 0;
+	transform: scale( 0 );
+	transition: .5s linear 0s;
+}
+
+#gifts {
+	width: 80%;
+	height: 10%;
+	margin: 50px auto;
+	border-radius: 10px;
+	font-family: Lucida;
+	text-align: center;
+	color: #FFF;
+}
